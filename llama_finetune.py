@@ -19,10 +19,11 @@ from pathlib import Path
 from dataclasses import dataclass
 import transformers
 from transformers import ( 
-    LlamaForCausalLM,
-    LlamaTokenizer, 
+    AutoModelForCausalLM,
+    AutoTokenizer,
     Trainer, 
-    TrainingArguments
+    TrainingArguments,
+    BitsAndBytesConfig
 )
 
 from torch.utils.data import Dataset
@@ -253,18 +254,19 @@ def setup_training_args(args):
 
     if args.debug:
         os.environ["WANDB_DISABLED"] = "True"
+    os.environ["WANDB_MODE"] = "disabled"
     os.environ["ACCELERATE_MIXED_PRECISION"] = "no"
     training_args = TrainingArguments(
         fsdp=False,
         fp16=not args.fp8,
-        bf16=False,
+        bf16=args.bf16,
         gradient_checkpointing=False,
         ddp_find_unused_parameters=False,
         num_train_epochs=args.num_epochs,
         eval_steps=args.eval_freq,
         save_steps=args.save_freq,
         logging_steps=10,
-        evaluation_strategy="steps",
+        eval_strategy="steps",
         per_device_train_batch_size=args.batch_size,
         per_device_eval_batch_size=args.batch_size,
         learning_rate=args.lr,
@@ -275,7 +277,6 @@ def setup_training_args(args):
         gradient_accumulation_steps=args.grad_accum,
         output_dir=output_dir,
         run_name=args.run_name,
-        report_to="wandb",
         dataloader_num_workers=8,
         remove_unused_columns=False,
         label_names=["crystal_ids"], #this is just to get trainer to behave how I want
@@ -313,19 +314,29 @@ def setup_model(args, rank):
         chat = "chat-" if chat else ""
         return f"meta-llama/Llama-2-{model_size.lower()}-{chat}hf"
 
-    model_string = llama2_model_string(model_size, is_chat)
+    def llama3_model_string(model_size):
+        return f"meta-llama/Llama-3.2-{model_size}-Instruct"
 
-    model = LlamaForCausalLM.from_pretrained(
-        model_string,
+    model_string = llama3_model_string(model_size) if args.llama3 else llama2_model_string(model_size, is_chat)
+
+    quantization_config = BitsAndBytesConfig(
         load_in_8bit=args.fp8,
+        bnb_4bit_compute_dtype=torch.float16
+    ) if args.fp8 else None
+
+    model = AutoModelForCausalLM.from_pretrained(
+        model_string,
+        quantization_config=quantization_config,
         device_map={"": rank},
+        trust_remote_code=args.llama3,
     )
 
-    llama_tokenizer = LlamaTokenizer.from_pretrained(
+    llama_tokenizer = AutoTokenizer.from_pretrained(
         model_string,
         model_max_length=MAX_LENGTH,
         padding_side="right",
         use_fast=False,
+        trust_remote_code=args.llama3,
     )
 
     lora_config = LoraConfig(
@@ -413,6 +424,8 @@ if __name__ == "__main__":
     parser.add_argument("--w-attributes", type=int, default=1)
     parser.add_argument("--resume-dir", type=Path, default=None)
     parser.add_argument("--debug", action="store_true", default=False)
+    parser.add_argument("--llama3", action="store_true", default=False)
+    parser.add_argument("--bf16", action="store_true", default=False)
     args = parser.parse_args()
 
     main(args)

@@ -10,9 +10,12 @@ import random
 import argparse
 import pandas as pd
 import numpy as np
+import torch
 
 from transformers import (
-    LlamaForCausalLM, LlamaTokenizer
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    BitsAndBytesConfig
 )
 from peft import PeftModel
 from pymatgen.core import Structure
@@ -54,21 +57,30 @@ def prepare_model_and_tokenizer(args):
         chat = "chat-" if chat else ""
         return f"meta-llama/Llama-2-{model_size.lower()}-{chat}hf"
 
-    model_string = llama2_model_string(model_size, is_chat)
-    
-    model = LlamaForCausalLM.from_pretrained(
-        model_string,
+    def llama3_model_string(model_size):
+        return f"meta-llama/Llama-3.2-{model_size}-Instruct"
+
+    model_string = llama3_model_string(model_size) if args.llama3 else llama2_model_string(model_size, is_chat)
+
+    quantization_config = BitsAndBytesConfig(
         load_in_8bit=True,
-        device_map="auto",
+        bnb_4bit_compute_dtype=torch.float16
     )
 
-    tokenizer = LlamaTokenizer.from_pretrained(
+    model = AutoModelForCausalLM.from_pretrained(
+        model_string,
+        quantization_config=quantization_config,
+        device_map="auto",
+        trust_remote_code=args.llama3,
+    )
+
+    tokenizer = AutoTokenizer.from_pretrained(
         model_string,
         model_max_length=MAX_LENGTH,
         padding_side="right",
         use_fast=False,
+        trust_remote_code=args.llama3,
     )
-
     model.eval()
 
     special_tokens_dict = dict()
@@ -369,6 +381,7 @@ if __name__ == "__main__":
     parser.add_argument("--infill_file", type=str, default="") #"data/with_tags/test.csv"
     parser.add_argument("--infill_do_constraint", type=int, default=0)
     parser.add_argument("--infill_constraint_tolerance", type=float, default=0.1)
+    parser.add_argument("--llama3", action="store_true", default=False)
     args = parser.parse_args()
 
     if ".csv" in args.out_path:

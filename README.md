@@ -15,14 +15,8 @@ by Nate Gruver, Anuroop Sriram, Andrea Madotto, Andrew Gordon Wilson, C. Lawrenc
 ## 🛠 Installation
 Run the following command to install all dependencies. 
 ```
-source install.sh
+pip install -r requirements.txt
 ```
-
-After installation, activate the environment with
-```
-conda activate crystal-llm
-```
-If you prefer not using conda, you can also install the dependencies listed in `install.sh` manually.
 
 ## 🚀 Training and Sampling Models
 Run training with
@@ -33,6 +27,8 @@ and sample from a PEFT model with
 ```
 python llama_sample.py --model_name 7b --model_path=exp/7b-test-run/checkpoint-500 --out_path=llm_samples.csv
 ```
+
+If you are using Llama-3.2 use the scripts inside the [scripts](scripts) subdirectory.
 
 ## E above hull evaluation
 
