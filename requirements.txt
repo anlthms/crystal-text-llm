@@ -11,12 +11,14 @@ scipy==1.15.1
 SMACT==3.0.2
 tensorflow==2.18.0
 timeout_decorator==0.5.0
-torch==2.2.1
+torch==2.6.0
 tqdm==4.66.4
-transformers==4.44.0
+transformers==4.48.2
 torchvision==0.21.0
 torchaudio==2.4.0
 accelerate==1.1.1
 sentencepiece==0.2.0
 datasets==3.2.0
 bitsandbytes==0.40.0
+trl==0.14.0
+crystal==0.1.0

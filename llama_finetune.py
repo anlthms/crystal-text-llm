@@ -34,12 +34,33 @@ from peft import (
     prepare_model_for_kbit_training
 )
 
+from trl import GRPOConfig
+from rl_trainer import RLTrainer
+from basic_eval import CDVAEGenEval, cif_str_to_crystal
+
 IGNORE_INDEX = -100
 MAX_LENGTH = 2048
 DEFAULT_PAD_TOKEN = "[PAD]"
 DEFAULT_EOS_TOKEN = "</s>"
 DEFAULT_BOS_TOKEN = "<s>"
 DEFAULT_UNK_TOKEN = "<unk>"
+
+# Reward function using get_validity from basic_eval.py
+def reward_function(prompts, completions, **kwargs):
+    # Convert text completions into Crystal objects
+    pred_crys = [cif_str_to_crystal(c) for c in completions]
+
+    # Remove None values (invalid structures)
+    pred_crys = [c for c in pred_crys if c is not None]
+
+    if len(pred_crys) == 0:
+        print("Warning: No valid crystals generated, returning zero reward.")
+        return [0] * len(completions)
+
+    eval_model = CDVAEGenEval(pred_crys=pred_crys, gt_cov_crys=[], gt_novelty_crys=[])
+    validity_scores = eval_model.get_validity()
+
+    return [validity_scores['valid']] * len(completions)
 
 def get_crystal_string(cif_str):
     structure = Structure.from_str(cif_str, fmt="cif")
@@ -199,8 +220,17 @@ class CifDataset(Dataset):
             raise IndexError("Index out of range")
 
         vals = self.inputs[index]
-        vals = self.tokenize(vals)
-        return vals
+        tokenized_data = self.tokenize(vals)
+
+        prompt_text = self.generation_task(vals)
+
+        return {
+            "input_ids": tokenized_data["input_ids"],
+            "labels": tokenized_data["labels"],
+            "attention_mask": tokenized_data["input_ids"].ne(self.llama_tokenizer.pad_token_id),
+            "prompt": prompt_text  # Explicitly include the prompt for GRPO Trainer
+        }
+
 
 @dataclass
 class DataCollatorForSupervisedDataset(object):
@@ -378,13 +408,34 @@ def setup_trainer(args):
         tokenizer=llama_tokenizer, 
     )
 
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=datasets["train"],
-        eval_dataset=datasets["val"],
-        data_collator=data_collator,
-    )
+    if args.use_grpo:
+        grpo_config = GRPOConfig(
+            output_dir=str(args.expdir / args.run_name),
+            logging_steps=10,
+            per_device_train_batch_size=args.batch_size,
+            per_device_eval_batch_size=args.batch_size,
+            learning_rate=args.lr,
+            num_train_epochs=args.num_epochs,
+            warmup_steps=args.num_warmup_steps,
+            weight_decay=args.weight_decay,
+            gradient_accumulation_steps=args.grad_accum,
+            num_generations=8,
+        )
+        trainer = RLTrainer(
+            model=model,
+            reward_funcs=reward_function,
+            args=grpo_config,
+            processing_class=llama_tokenizer,
+            train_dataset=datasets["train"],
+        )
+    else:
+        trainer = Trainer(
+            model=model,
+            args=training_args,
+            train_dataset=datasets["train"],
+            eval_dataset=datasets["val"],
+            data_collator=data_collator,
+        )
 
     return trainer
 
@@ -426,6 +477,7 @@ if __name__ == "__main__":
     parser.add_argument("--debug", action="store_true", default=False)
     parser.add_argument("--llama3", action="store_true", default=False)
     parser.add_argument("--bf16", action="store_true", default=False)
+    parser.add_argument("--use-grpo", action="store_true", help="Enable GRPO training")
     args = parser.parse_args()
 
     main(args)
