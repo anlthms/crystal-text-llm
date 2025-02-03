@@ -1,0 +1,1025 @@
+gen_str,cif,model_name
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+3.3 3.3 3.3
+59 59 59
+Rh
+0.30 0.55 0.15","# generated using pymatgen
+data_Rh
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.30000000
+_cell_length_b   3.30000000
+_cell_length_c   3.30000000
+_cell_angle_alpha   59.00000000
+_cell_angle_beta   59.00000000
+_cell_angle_gamma   59.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Rh
+_chemical_formula_sum   Rh1
+_cell_volume   24.83165279
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rh  Rh0  1  0.30000000  0.55000000  0.15000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+5.2 5.2 5.2
+90 90 90
+Li
+0.41 0.67 0.63
+Li
+0.91 0.17 0.13
+Li
+0.91 0.67 0.63
+Mn
+0.41 0.17 0.13
+Mn
+0.91 0.17 0.63
+Mn
+0.41 0.67 0.13
+O
+0.63 0.39 0.13
+O
+0.22 0.86 0.13
+O
+0.63 0.39 0.63
+O
+0.22 0.86 0.63","# generated using pymatgen
+data_Li3Mn3O4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.20000000
+_cell_length_b   5.20000000
+_cell_length_c   5.20000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li3Mn3O4
+_chemical_formula_sum   'Li3 Mn3 O4'
+_cell_volume   140.60800000
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.41000000  0.67000000  0.63000000  1
+  Li  Li1  1  0.91000000  0.17000000  0.13000000  1
+  Li  Li2  1  0.91000000  0.67000000  0.63000000  1
+  Mn  Mn3  1  0.41000000  0.17000000  0.13000000  1
+  Mn  Mn4  1  0.91000000  0.17000000  0.63000000  1
+  Mn  Mn5  1  0.41000000  0.67000000  0.13000000  1
+  O  O6  1  0.63000000  0.39000000  0.13000000  1
+  O  O7  1  0.22000000  0.86000000  0.13000000  1
+  O  O8  1  0.63000000  0.39000000  0.63000000  1
+  O  O9  1  0.22000000  0.86000000  0.63000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+3.7 6.7 6.7
+100 109 108
+Rb
+0.00 0.54 0.33
+Rb
+0.50 0.14 0.83
+Ag
+0.25 0.04 0.83
+Ag
+0.75 0.64 0.33
+O
+0.50 0.81 0.53
+O
+0.50 0.48 0.93
+O
+0.00 0.14 0.23
+O
+0.50 0.14 0.71
+O
+0.00 0.81 0.27
+O
+0.00 0.48 0.79","# generated using pymatgen
+data_RbAgO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.70000000
+_cell_length_b   6.70000000
+_cell_length_c   6.70000000
+_cell_angle_alpha   100.00000000
+_cell_angle_beta   109.00000000
+_cell_angle_gamma   108.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   RbAgO3
+_chemical_formula_sum   'Rb2 Ag2 O6'
+_cell_volume   142.24195745
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb  Rb0  1  0.00000000  0.54000000  0.33000000  1
+  Rb  Rb1  1  0.50000000  0.14000000  0.83000000  1
+  Ag  Ag2  1  0.25000000  0.04000000  0.83000000  1
+  Ag  Ag3  1  0.75000000  0.64000000  0.33000000  1
+  O  O4  1  0.50000000  0.81000000  0.53000000  1
+  O  O5  1  0.50000000  0.48000000  0.93000000  1
+  O  O6  1  0.00000000  0.14000000  0.23000000  1
+  O  O7  1  0.50000000  0.14000000  0.71000000  1
+  O  O8  1  0.00000000  0.81000000  0.27000000  1
+  O  O9  1  0.00000000  0.48000000  0.79000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+4.7 5.6 5.6
+89 90 90
+Cu
+0.91 0.25 0.85
+Cu
+0.91 0.75 0.35
+Au
+0.41 0.25 0.85
+Au
+0.41 0.75 0.35","# generated using pymatgen
+data_CuAu
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.70000000
+_cell_length_b   5.60000000
+_cell_length_c   5.60000000
+_cell_angle_alpha   89.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CuAu
+_chemical_formula_sum   'Cu2 Au2'
+_cell_volume   147.36955148
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cu  Cu0  1  0.91000000  0.25000000  0.85000000  1
+  Cu  Cu1  1  0.91000000  0.75000000  0.35000000  1
+  Au  Au2  1  0.41000000  0.25000000  0.85000000  1
+  Au  Au3  1  0.41000000  0.75000000  0.35000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+6.0 6.0 5.2
+90 90 150
+Dy
+0.39 0.91 0.79
+Dy
+0.78 0.51 0.79
+Hg
+0.01 0.26 0.29
+Hg
+0.76 0.50 0.29","# generated using pymatgen
+data_DyHg
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.00000000
+_cell_length_b   6.00000000
+_cell_length_c   5.20000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   150.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   DyHg
+_chemical_formula_sum   'Dy2 Hg2'
+_cell_volume   93.60000000
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.39000000  0.91000000  0.79000000  1
+  Dy  Dy1  1  0.78000000  0.51000000  0.79000000  1
+  Hg  Hg2  1  0.01000000  0.26000000  0.29000000  1
+  Hg  Hg3  1  0.76000000  0.50000000  0.29000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+6.1 6.1 6.1
+32 32 32
+Yb
+0.24 0.65 0.57
+Yb
+0.97 0.40 0.32
+Mo
+0.40 0.79 0.72
+Co
+0.40 0.29 0.22
+Co
+0.90 0.79 0.22
+Co
+0.90 0.29 0.72","# generated using pymatgen
+data_Yb2Co3Mo
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.10000000
+_cell_length_b   6.10000000
+_cell_length_c   6.10000000
+_cell_angle_alpha   32.00000000
+_cell_angle_beta   32.00000000
+_cell_angle_gamma   32.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Yb2Co3Mo
+_chemical_formula_sum   'Yb2 Co3 Mo1'
+_cell_volume   56.63218818
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Yb  Yb0  1  0.24000000  0.65000000  0.57000000  1
+  Yb  Yb1  1  0.97000000  0.40000000  0.32000000  1
+  Mo  Mo2  1  0.40000000  0.79000000  0.72000000  1
+  Co  Co3  1  0.40000000  0.29000000  0.22000000  1
+  Co  Co4  1  0.90000000  0.79000000  0.22000000  1
+  Co  Co5  1  0.90000000  0.29000000  0.72000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+5.7 5.7 5.7
+59 59 59
+Tm
+0.89 0.59 0.41
+Tm
+0.39 0.09 0.91
+Mg
+0.64 0.34 0.16
+Mg
+0.14 0.84 0.66
+O
+0.98 0.67 0.49
+O
+0.48 0.17 0.99
+O
+0.83 0.50 0.33
+O
+0.30 0.98 0.79
+O
+0.83 0.50 0.79
+O
+0.30 0.98 0.33
+O
+0.50 0.17 0.49
+O
+0.67 0.67 0.68","# generated using pymatgen
+data_TmMgO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.70000000
+_cell_length_b   5.70000000
+_cell_length_c   5.70000000
+_cell_angle_alpha   59.00000000
+_cell_angle_beta   59.00000000
+_cell_angle_gamma   59.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TmMgO4
+_chemical_formula_sum   'Tm2 Mg2 O8'
+_cell_volume   127.96416717
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tm  Tm0  1  0.89000000  0.59000000  0.41000000  1
+  Tm  Tm1  1  0.39000000  0.09000000  0.91000000  1
+  Mg  Mg2  1  0.64000000  0.34000000  0.16000000  1
+  Mg  Mg3  1  0.14000000  0.84000000  0.66000000  1
+  O  O4  1  0.98000000  0.67000000  0.49000000  1
+  O  O5  1  0.48000000  0.17000000  0.99000000  1
+  O  O6  1  0.83000000  0.50000000  0.33000000  1
+  O  O7  1  0.30000000  0.98000000  0.79000000  1
+  O  O8  1  0.83000000  0.50000000  0.79000000  1
+  O  O9  1  0.30000000  0.98000000  0.33000000  1
+  O  O10  1  0.50000000  0.17000000  0.49000000  1
+  O  O11  1  0.67000000  0.67000000  0.68000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+7.0 7.0 7.0
+59 59 59
+K
+0.77 0.09 0.57
+Cs
+0.27 0.59 0.07
+In
+0.02 0.34 0.82
+In
+0.52 0.84 0.32
+F
+0.28 0.60 0.06
+F
+0.75 0.60 0.58
+F
+0.75 0.11 0.58
+F
+0.75 0.11 0.06
+F
+0.28 0.60 0.58
+F
+0.28 0.11 0.06","# generated using pymatgen
+data_CsKIn2F6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.00000000
+_cell_length_b   7.00000000
+_cell_length_c   7.00000000
+_cell_angle_alpha   59.00000000
+_cell_angle_beta   59.00000000
+_cell_angle_gamma   59.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsKIn2F6
+_chemical_formula_sum   'Cs1 K1 In2 F6'
+_cell_volume   237.00522880
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.77000000  0.09000000  0.57000000  1
+  Cs  Cs1  1  0.27000000  0.59000000  0.07000000  1
+  In  In2  1  0.02000000  0.34000000  0.82000000  1
+  In  In3  1  0.52000000  0.84000000  0.32000000  1
+  F  F4  1  0.28000000  0.60000000  0.06000000  1
+  F  F5  1  0.75000000  0.60000000  0.58000000  1
+  F  F6  1  0.75000000  0.11000000  0.58000000  1
+  F  F7  1  0.75000000  0.11000000  0.06000000  1
+  F  F8  1  0.28000000  0.60000000  0.58000000  1
+  F  F9  1  0.28000000  0.11000000  0.06000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+6.3 6.3 6.3
+131 131 71
+Pm
+0.73 0.93 0.88
+Pm
+0.48 0.18 0.38
+Pm
+0.13 0.47 0.65
+Pm
+0.99 0.73 0.15
+Pm
+0.62 0.47 0.38
+Pm
+0.34 0.73 0.88","# generated using pymatgen
+data_Pm
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.30000000
+_cell_length_b   6.30000000
+_cell_length_c   6.30000000
+_cell_angle_alpha   131.00000000
+_cell_angle_beta   131.00000000
+_cell_angle_gamma   71.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Pm
+_chemical_formula_sum   Pm6
+_cell_volume   139.98976876
+_cell_formula_units_Z   6
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pm  Pm0  1  0.73000000  0.93000000  0.88000000  1
+  Pm  Pm1  1  0.48000000  0.18000000  0.38000000  1
+  Pm  Pm2  1  0.13000000  0.47000000  0.65000000  1
+  Pm  Pm3  1  0.99000000  0.73000000  0.15000000  1
+  Pm  Pm4  1  0.62000000  0.47000000  0.38000000  1
+  Pm  Pm5  1  0.34000000  0.73000000  0.88000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+6.6 6.6 4.6
+90 90 120
+La
+0.15 0.49 0.02
+La
+0.48 0.22 0.02
+Yb
+0.82 0.86 0.02
+O
+0.80 0.52 0.52
+O
+0.34 0.52 0.52
+O
+0.81 0.94 0.52
+O
+0.32 0.96 0.52
+O
+0.78 0.95 0.52
+O
+0.31 0.95 0.52","# generated using pymatgen
+data_La2YbO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.60000000
+_cell_length_b   6.60000000
+_cell_length_c   4.60000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   La2YbO6
+_chemical_formula_sum   'La2 Yb1 O6'
+_cell_volume   173.53070631
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.15000000  0.49000000  0.02000000  1
+  La  La1  1  0.48000000  0.22000000  0.02000000  1
+  Yb  Yb2  1  0.82000000  0.86000000  0.02000000  1
+  O  O3  1  0.80000000  0.52000000  0.52000000  1
+  O  O4  1  0.34000000  0.52000000  0.52000000  1
+  O  O5  1  0.81000000  0.94000000  0.52000000  1
+  O  O6  1  0.32000000  0.96000000  0.52000000  1
+  O  O7  1  0.78000000  0.95000000  0.52000000  1
+  O  O8  1  0.31000000  0.95000000  0.52000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+4.1 6.4 8.7
+90 90 90
+Li
+0.11 0.30 0.82
+Li
+0.11 0.80 0.56
+Li
+0.11 0.80 0.06
+Li
+0.11 0.30 0.32
+P
+0.61 0.99 0.82
+P
+0.61 0.48 0.56
+P
+0.61 0.48 0.06
+P
+0.61 0.99 0.32
+O
+0.61 0.49 0.79
+O
+0.61 0.99 0.75
+O
+0.61 0.49 0.25
+O
+0.61 0.99 0.29
+O
+0.61 0.49 0.50
+O
+0.61 0.99 0.50
+O
+0.61 0.99 0.00
+O
+0.61 0.49 0.00","# generated using pymatgen
+data_LiPO2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.10000000
+_cell_length_b   6.40000000
+_cell_length_c   8.70000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LiPO2
+_chemical_formula_sum   'Li4 P4 O8'
+_cell_volume   228.28800000
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.11000000  0.30000000  0.82000000  1
+  Li  Li1  1  0.11000000  0.80000000  0.56000000  1
+  Li  Li2  1  0.11000000  0.80000000  0.06000000  1
+  Li  Li3  1  0.11000000  0.30000000  0.32000000  1
+  P  P4  1  0.61000000  0.99000000  0.82000000  1
+  P  P5  1  0.61000000  0.48000000  0.56000000  1
+  P  P6  1  0.61000000  0.48000000  0.06000000  1
+  P  P7  1  0.61000000  0.99000000  0.32000000  1
+  O  O8  1  0.61000000  0.49000000  0.79000000  1
+  O  O9  1  0.61000000  0.99000000  0.75000000  1
+  O  O10  1  0.61000000  0.49000000  0.25000000  1
+  O  O11  1  0.61000000  0.99000000  0.29000000  1
+  O  O12  1  0.61000000  0.49000000  0.50000000  1
+  O  O13  1  0.61000000  0.99000000  0.50000000  1
+  O  O14  1  0.61000000  0.99000000  0.00000000  1
+  O  O15  1  0.61000000  0.49000000  0.00000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+5.1 5.1 7.1
+90 90 120
+In
+0.24 0.42 0.20
+In
+0.92 0.75 0.71
+In
+0.92 0.75 0.38
+In
+0.24 0.42 0.88
+H
+0.57 0.09 0.99
+H
+0.57 0.09 0.48
+H
+0.29 0.47 0.99
+H
+0.29 0.47 0.48
+H
+0.57 0.09 0.24
+H
+0.57 0.09 0.78
+H
+0.29 0.47 0.24
+H
+0.29 0.47 0.78","# generated using pymatgen
+data_InH2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.10000000
+_cell_length_b   5.10000000
+_cell_length_c   7.10000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   InH2
+_chemical_formula_sum   'In4 H8'
+_cell_volume   159.92977734
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  In  In0  1  0.24000000  0.42000000  0.20000000  1
+  In  In1  1  0.92000000  0.75000000  0.71000000  1
+  In  In2  1  0.92000000  0.75000000  0.38000000  1
+  In  In3  1  0.24000000  0.42000000  0.88000000  1
+  H  H4  1  0.57000000  0.09000000  0.99000000  1
+  H  H5  1  0.57000000  0.09000000  0.48000000  1
+  H  H6  1  0.29000000  0.47000000  0.99000000  1
+  H  H7  1  0.29000000  0.47000000  0.48000000  1
+  H  H8  1  0.57000000  0.09000000  0.24000000  1
+  H  H9  1  0.57000000  0.09000000  0.78000000  1
+  H  H10  1  0.29000000  0.47000000  0.24000000  1
+  H  H11  1  0.29000000  0.47000000  0.78000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+5.1 5.1 5.1
+59 59 59
+Pr
+0.98 0.67 0.25
+Bi
+0.48 0.17 0.75
+Pd
+0.73 0.42 0.00
+Pd
+0.23 0.92 0.50","# generated using pymatgen
+data_PrBiPd2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.10000000
+_cell_length_b   5.10000000
+_cell_length_c   5.10000000
+_cell_angle_alpha   59.00000000
+_cell_angle_beta   59.00000000
+_cell_angle_gamma   59.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   PrBiPd2
+_chemical_formula_sum   'Pr1 Bi1 Pd2'
+_cell_volume   91.65883559
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr  Pr0  1  0.98000000  0.67000000  0.25000000  1
+  Bi  Bi1  1  0.48000000  0.17000000  0.75000000  1
+  Pd  Pd2  1  0.73000000  0.42000000  0.00000000  1
+  Pd  Pd3  1  0.23000000  0.92000000  0.50000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+7.2 7.2 7.2
+59 59 59
+Cs
+0.79 0.59 0.85
+Cs
+0.29 0.09 0.35
+Sb
+0.54 0.34 0.60
+Sb
+0.04 0.84 0.10
+O
+0.79 0.59 0.35
+O
+0.29 0.09 0.85
+O
+0.79 0.09 0.85
+O
+0.29 0.59 0.35
+O
+0.29 0.59 0.85
+O
+0.79 0.09 0.35","# generated using pymatgen
+data_CsSbO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.20000000
+_cell_length_b   7.20000000
+_cell_length_c   7.20000000
+_cell_angle_alpha   59.00000000
+_cell_angle_beta   59.00000000
+_cell_angle_gamma   59.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsSbO3
+_chemical_formula_sum   'Cs2 Sb2 O6'
+_cell_volume   257.90591149
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.79000000  0.59000000  0.85000000  1
+  Cs  Cs1  1  0.29000000  0.09000000  0.35000000  1
+  Sb  Sb2  1  0.54000000  0.34000000  0.60000000  1
+  Sb  Sb3  1  0.04000000  0.84000000  0.10000000  1
+  O  O4  1  0.79000000  0.59000000  0.35000000  1
+  O  O5  1  0.29000000  0.09000000  0.85000000  1
+  O  O6  1  0.79000000  0.09000000  0.85000000  1
+  O  O7  1  0.29000000  0.59000000  0.35000000  1
+  O  O8  1  0.29000000  0.59000000  0.85000000  1
+  O  O9  1  0.79000000  0.09000000  0.35000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+4.6 5.6 7.7
+90 90 90
+Pb
+0.81 0.58 0.07
+Pb
+0.31 0.08 0.07
+Si
+0.81 0.58 0.57
+Si
+0.31 0.08 0.57
+O
+0.31 0.75 0.28
+O
+0.81 0.25 0.28
+O
+0.31 0.33 0.93
+O
+0.81 0.83 0.93
+O
+0.31 0.98 0.61
+O
+0.81 0.48 0.61
+O
+0.31 0.20 0.37
+O
+0.81 0.70 0.37","# generated using pymatgen
+data_SiPbO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.60000000
+_cell_length_b   5.60000000
+_cell_length_c   7.70000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SiPbO4
+_chemical_formula_sum   'Si2 Pb2 O8'
+_cell_volume   198.35200000
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pb  Pb0  1  0.81000000  0.58000000  0.07000000  1
+  Pb  Pb1  1  0.31000000  0.08000000  0.07000000  1
+  Si  Si2  1  0.81000000  0.58000000  0.57000000  1
+  Si  Si3  1  0.31000000  0.08000000  0.57000000  1
+  O  O4  1  0.31000000  0.75000000  0.28000000  1
+  O  O5  1  0.81000000  0.25000000  0.28000000  1
+  O  O6  1  0.31000000  0.33000000  0.93000000  1
+  O  O7  1  0.81000000  0.83000000  0.93000000  1
+  O  O8  1  0.31000000  0.98000000  0.61000000  1
+  O  O9  1  0.81000000  0.48000000  0.61000000  1
+  O  O10  1  0.31000000  0.20000000  0.37000000  1
+  O  O11  1  0.81000000  0.70000000  0.37000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+3.4 3.4 9.1
+90 90 90
+Nd
+0.25 0.71 0.55
+Nd
+0.25 0.71 0.03
+Pd
+0.75 0.21 0.79
+Pd
+0.75 0.21 0.29","# generated using pymatgen
+data_NdPd
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.40000000
+_cell_length_b   3.40000000
+_cell_length_c   9.10000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NdPd
+_chemical_formula_sum   'Nd2 Pd2'
+_cell_volume   105.19600000
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  1  0.25000000  0.71000000  0.55000000  1
+  Nd  Nd1  1  0.25000000  0.71000000  0.03000000  1
+  Pd  Pd2  1  0.75000000  0.21000000  0.79000000  1
+  Pd  Pd3  1  0.75000000  0.21000000  0.29000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+6.2 6.2 6.2
+135 135 66
+Eu
+0.23 0.58 0.93
+Eu
+0.48 0.33 0.43
+Cu
+0.93 0.85 0.43
+Cu
+0.73 0.08 0.93","# generated using pymatgen
+data_EuCu
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.20000000
+_cell_length_b   6.20000000
+_cell_length_c   6.20000000
+_cell_angle_alpha   135.00000000
+_cell_angle_beta   135.00000000
+_cell_angle_gamma   66.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuCu
+_chemical_formula_sum   'Eu2 Cu2'
+_cell_volume   117.07265861
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.23000000  0.58000000  0.93000000  1
+  Eu  Eu1  1  0.48000000  0.33000000  0.43000000  1
+  Cu  Cu2  1  0.93000000  0.85000000  0.43000000  1
+  Cu  Cu3  1  0.73000000  0.08000000  0.93000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+3.1 6.8 6.8
+90 90 90
+Ho
+0.35 0.20 0.55
+Ho
+0.35 0.70 0.05
+In
+0.85 0.70 0.55
+In
+0.85 0.20 0.05","# generated using pymatgen
+data_HoIn
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.10000000
+_cell_length_b   6.80000000
+_cell_length_c   6.80000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   HoIn
+_chemical_formula_sum   'Ho2 In2'
+_cell_volume   143.34400000
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.35000000  0.20000000  0.55000000  1
+  Ho  Ho1  1  0.35000000  0.70000000  0.05000000  1
+  In  In2  1  0.85000000  0.70000000  0.55000000  1
+  In  In3  1  0.85000000  0.20000000  0.05000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+5.4 5.4 5.4
+128 128 75
+Ce
+0.19 0.98 0.41
+In
+0.70 0.48 0.91
+Si
+0.95 0.73 0.41
+Si
+0.45 0.23 0.91","# generated using pymatgen
+data_CeInSi2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.40000000
+_cell_length_b   5.40000000
+_cell_length_c   5.40000000
+_cell_angle_alpha   128.00000000
+_cell_angle_beta   128.00000000
+_cell_angle_gamma   75.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CeInSi2
+_chemical_formula_sum   'Ce1 In1 Si2'
+_cell_volume   95.92900847
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.19000000  0.98000000  0.41000000  1
+  In  In1  1  0.70000000  0.48000000  0.91000000  1
+  Si  Si2  1  0.95000000  0.73000000  0.41000000  1
+  Si  Si3  1  0.45000000  0.23000000  0.91000000  1
+",1B
+"Below is a description of a bulk material. Generate a description of the lengths and angles of the lattice vectors and then the element type and coordinates for each atom within the lattice:
+4.0 4.0 8.4
+90 90 119
+Eu
+0.27 0.66 0.33
+Eu
+0.27 0.66 0.84
+H
+0.54 0.33 0.51
+H
+0.91 0.95 0.03
+H
+0.91 0.95 0.55
+H
+0.54 0.33 0.01","# generated using pymatgen
+data_EuH2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.00000000
+_cell_length_b   4.00000000
+_cell_length_c   8.40000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuH2
+_chemical_formula_sum   'Eu2 H4'
+_cell_volume   117.54888864
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.27000000  0.66000000  0.33000000  1
+  Eu  Eu1  1  0.27000000  0.66000000  0.84000000  1
+  H  H2  1  0.54000000  0.33000000  0.51000000  1
+  H  H3  1  0.91000000  0.95000000  0.03000000  1
+  H  H4  1  0.91000000  0.95000000  0.55000000  1
+  H  H5  1  0.54000000  0.33000000  0.01000000  1
+",1B
